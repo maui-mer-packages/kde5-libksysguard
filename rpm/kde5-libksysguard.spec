@@ -94,25 +94,25 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc COPYING.LIB
-%{_kf5_libdir}/liblsofui.so.*
-%{_kf5_libdir}/libprocessui.so.*
-%{_kf5_libdir}/libprocesscore.so.*
-%{_kf5_libdir}/libksignalplotter.so.*
-%{_kf5_libdir}/libksgrd.so.*
-%{_kf5_datadir}/ksysguard
+%{_kde5_libdir}/liblsofui.so.*
+%{_kde5_libdir}/libprocessui.so.*
+%{_kde5_libdir}/libprocesscore.so.*
+%{_kde5_libdir}/libksignalplotter.so.*
+%{_kde5_libdir}/libksgrd.so.*
+%{_kde5_datadir}/ksysguard
 # >> files
 # << files
 
 
 %files devel
 %defattr(-,root,root,-)
-%{_kf5_includedir}/ksysguard
-%{_kf5_libdir}/liblsofui.so
-%{_kf5_libdir}/libprocessui.so
-%{_kf5_libdir}/libprocesscore.so
-%{_kf5_libdir}/libksignalplotter.so
-%{_kf5_libdir}/libksgrd.so
-%{_kf5_libdir}/cmake/KF5SysGuard
+%{_kde5_includedir}/ksysguard
+%{_kde5_libdir}/liblsofui.so
+%{_kde5_libdir}/libprocessui.so
+%{_kde5_libdir}/libprocesscore.so
+%{_kde5_libdir}/libksignalplotter.so
+%{_kde5_libdir}/libksgrd.so
+%{_kde5_libdir}/cmake/KF5SysGuard
 # >> files devel
 # << files devel
 

@@ -56,12 +56,12 @@ RequiresPostUn:
 
 Files:
     - "%doc COPYING.LIB"
-    - "%{_kf5_libdir}/liblsofui.so.*"
-    - "%{_kf5_libdir}/libprocessui.so.*"
-    - "%{_kf5_libdir}/libprocesscore.so.*"
-    - "%{_kf5_libdir}/libksignalplotter.so.*"
-    - "%{_kf5_libdir}/libksgrd.so.*"
-    - "%{_kf5_datadir}/ksysguard"
+    - "%{_kde5_libdir}/liblsofui.so.*"
+    - "%{_kde5_libdir}/libprocessui.so.*"
+    - "%{_kde5_libdir}/libprocesscore.so.*"
+    - "%{_kde5_libdir}/libksignalplotter.so.*"
+    - "%{_kde5_libdir}/libksgrd.so.*"
+    - "%{_kde5_datadir}/ksysguard"
 
 SubPackages:
     - Name: devel
@@ -71,10 +71,10 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kf5_includedir}/ksysguard"
-          - "%{_kf5_libdir}/liblsofui.so"
-          - "%{_kf5_libdir}/libprocessui.so"
-          - "%{_kf5_libdir}/libprocesscore.so"
-          - "%{_kf5_libdir}/libksignalplotter.so"
-          - "%{_kf5_libdir}/libksgrd.so"
-          - "%{_kf5_libdir}/cmake/KF5SysGuard"
+          - "%{_kde5_includedir}/ksysguard"
+          - "%{_kde5_libdir}/liblsofui.so"
+          - "%{_kde5_libdir}/libprocessui.so"
+          - "%{_kde5_libdir}/libprocesscore.so"
+          - "%{_kde5_libdir}/libksignalplotter.so"
+          - "%{_kde5_libdir}/libksgrd.so"
+          - "%{_kde5_libdir}/cmake/KF5SysGuard"
