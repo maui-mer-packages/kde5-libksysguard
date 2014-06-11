@@ -44,6 +44,8 @@ PkgConfigBR:
     - Qt5WebKit
     - Qt5X11Extras
     - Qt5Script
+    - Qt5WebKitWidgets
+    - Qt5PrintSupport
 Requires:
     - kde5-filesystem
 
