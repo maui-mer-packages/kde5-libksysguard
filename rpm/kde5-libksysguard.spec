@@ -7,7 +7,7 @@
 
 Name:       kde5-libksysguard
 Summary:    KDE process management library
-Version:    4.97.0
+Version:    5.0.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
