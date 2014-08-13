@@ -1,4 +1,4 @@
-Name         : kde5-libksysguard
+Name         : libksysguard
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -22,14 +22,14 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-ki18n-devel
-    - kf5-kdelibs4support-devel
-    - kf5-plasma-devel
-    - kf5-kconfig-devel
-    - kf5-knewstuff-devel
+    - ki18n-devel
+    - kdelibs4support-devel
+    - plasma-devel
+    - kconfig-devel
+    - knewstuff-devel
     - zlib-devel
     - libXres-devel
 PkgConfigBR:
@@ -47,7 +47,7 @@ PkgConfigBR:
     - Qt5WebKitWidgets
     - Qt5PrintSupport
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
 
 RequiresPost:
     - /sbin/ldconfig
@@ -56,12 +56,12 @@ RequiresPostUn:
 
 Files:
     - "%doc COPYING.LIB"
-    - "%{_kde5_libdir}/liblsofui.so.*"
-    - "%{_kde5_libdir}/libprocessui.so.*"
-    - "%{_kde5_libdir}/libprocesscore.so.*"
-    - "%{_kde5_libdir}/libksignalplotter.so.*"
-    - "%{_kde5_libdir}/libksgrd.so.*"
-    - "%{_kde5_datadir}/ksysguard"
+    - "%{_kf5_libdir}/liblsofui.so.*"
+    - "%{_kf5_libdir}/libprocessui.so.*"
+    - "%{_kf5_libdir}/libprocesscore.so.*"
+    - "%{_kf5_libdir}/libksignalplotter.so.*"
+    - "%{_kf5_libdir}/libksgrd.so.*"
+    - "%{_kf5_sharedir}/ksysguard"
 
 SubPackages:
     - Name: devel
@@ -71,10 +71,10 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kde5_includedir}/ksysguard"
-          - "%{_kde5_libdir}/liblsofui.so"
-          - "%{_kde5_libdir}/libprocessui.so"
-          - "%{_kde5_libdir}/libprocesscore.so"
-          - "%{_kde5_libdir}/libksignalplotter.so"
-          - "%{_kde5_libdir}/libksgrd.so"
-          - "%{_kde5_libdir}/cmake/KF5SysGuard"
+          - "%{_kf5_includedir}/ksysguard"
+          - "%{_kf5_libdir}/liblsofui.so"
+          - "%{_kf5_libdir}/libprocessui.so"
+          - "%{_kf5_libdir}/libprocesscore.so"
+          - "%{_kf5_libdir}/libksignalplotter.so"
+          - "%{_kf5_libdir}/libksgrd.so"
+          - "%{_kf5_cmakedir}/KF5SysGuard"
