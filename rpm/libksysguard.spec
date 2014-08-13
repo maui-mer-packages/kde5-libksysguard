@@ -33,6 +33,8 @@ BuildRequires:  pkgconfig(Qt5X11Extras)
 BuildRequires:  pkgconfig(Qt5Script)
 BuildRequires:  pkgconfig(Qt5WebKitWidgets)
 BuildRequires:  pkgconfig(Qt5PrintSupport)
+BuildRequires:  pkgconfig(zlib)
+BuildRequires:  pkgconfig(xres)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
@@ -41,8 +43,6 @@ BuildRequires:  kdelibs4support-devel
 BuildRequires:  plasma-devel
 BuildRequires:  kconfig-devel
 BuildRequires:  knewstuff-devel
-BuildRequires:  zlib-devel
-BuildRequires:  libXres-devel
 
 %description
 KDE process management library
@@ -97,7 +97,7 @@ rm -rf %{buildroot}
 
 %files devel
 %defattr(-,root,root,-)
-%{_kf5_includedir}/ksysguard
+%{_includedir}/ksysguard
 %{_kf5_libdir}/liblsofui.so
 %{_kf5_libdir}/libprocessui.so
 %{_kf5_libdir}/libprocesscore.so

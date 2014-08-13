@@ -30,8 +30,6 @@ PkgBR:
     - plasma-devel
     - kconfig-devel
     - knewstuff-devel
-    - zlib-devel
-    - libXres-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -46,6 +44,8 @@ PkgConfigBR:
     - Qt5Script
     - Qt5WebKitWidgets
     - Qt5PrintSupport
+    - zlib
+    - xres
 Requires:
     - kf5-filesystem
 
@@ -71,7 +71,7 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kf5_includedir}/ksysguard"
+          - "%{_includedir}/ksysguard"
           - "%{_kf5_libdir}/liblsofui.so"
           - "%{_kf5_libdir}/libprocessui.so"
           - "%{_kf5_libdir}/libprocesscore.so"
