@@ -8,6 +8,12 @@ Name:       libksysguard
 # >> macros
 # << macros
 
+# >> bcond_with
+# << bcond_with
+
+# >> bcond_without
+# << bcond_without
+
 Summary:    KDE process management library
 Version:    5.0.0
 Release:    1
@@ -92,6 +98,10 @@ rm -rf %{buildroot}
 %{_kf5_libdir}/libksignalplotter.so.*
 %{_kf5_libdir}/libksgrd.so.*
 %{_kf5_sharedir}/ksysguard
+%{_sysconfdir}/dbus-1/*
+%{_kf5_sharedir}/dbus-1/system-services/*.service
+%{_kf5_sharedir}/polkit-1/*
+%{_kf5_libdir}/libexec/kauth/*
 # >> files
 # << files
 
