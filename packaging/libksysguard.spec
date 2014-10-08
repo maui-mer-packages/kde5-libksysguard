@@ -8,12 +8,6 @@ Name:       libksysguard
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    KDE process management library
 Version:    5.0.0
 Release:    1
@@ -65,7 +59,7 @@ that use %{name}.
 
 
 %prep
-%setup -q -n %{name}-%{version}/upstream
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup

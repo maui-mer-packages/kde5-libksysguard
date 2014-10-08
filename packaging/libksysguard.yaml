@@ -7,7 +7,6 @@ Summary      : KDE process management library
 Description  : |
   KDE process management library
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
