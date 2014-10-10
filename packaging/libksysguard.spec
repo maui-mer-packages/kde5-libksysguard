@@ -9,7 +9,7 @@ Name:       libksysguard
 # << macros
 
 Summary:    KDE process management library
-Version:    5.0.0
+Version:    5.1.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
